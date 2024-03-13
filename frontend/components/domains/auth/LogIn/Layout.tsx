@@ -4,9 +4,7 @@ import { useTranslation, Trans } from 'next-i18next';
 import React, { FormEvent } from 'react';
 import { useConnect } from 'wagmi';
 
-import { APPLE_AUTH_PLACEMENT, AppleAuthBtn } from '@components/domains/auth/buttons/AppleAuthBtn';
 import { ConnectorBtn } from '@components/domains/auth/buttons/ConnectorBtn';
-import { GOOGLE_AUTH_PLACEMENT, GoogleAuthBtn } from '@components/domains/auth/buttons/GoogleAuthBtn';
 import { InputPassword } from '@components/domains/auth/InputPassword';
 import { Modal } from '@components/domains/shared/Modal';
 
@@ -115,18 +113,6 @@ const Layout = (props: TLogInLayoutProps): React.ReactElement | null => {
               }}
             />
           </Text>
-
-          <GoogleAuthBtn
-            placement={GOOGLE_AUTH_PLACEMENT.LOGIN}
-            fullWidth
-            mb={4}
-          />
-
-          <AppleAuthBtn
-            placement={APPLE_AUTH_PLACEMENT.LOGIN}
-            fullWidth
-            mb={4}
-          />
 
           {
             hasCrypto && (

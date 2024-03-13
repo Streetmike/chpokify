@@ -5,7 +5,7 @@ FROM node:16-alpine3.11
 
 ENV BASE_API_SSR_URL=http://server:8083
 ENV APP_COOKIE_SESSION_NAME=chpokify-sid
-ENV APP_HOST_PROD=chpokify.com
+ENV APP_HOST_PROD=chpokify.ru
 ENV CLIENT_SENTRY_DSN=https://188f27902b6149d887075c376829d4b5@o466468.ingest.sentry.io/5480810
 
 # create app directory

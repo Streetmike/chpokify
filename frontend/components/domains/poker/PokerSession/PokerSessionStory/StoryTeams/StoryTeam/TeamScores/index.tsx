@@ -5,6 +5,7 @@ import React, { useRef, useState } from 'react';
 import { useSelector } from 'react-redux';
 import shortid from 'shortid';
 import styled from 'styled-components';
+import { useTranslation } from 'next-i18next';
 
 import { pokerSessionsAsyncActions } from '@Redux/domains/pokerSessions/asyncActions';
 import { pokerSessionsSelectors } from '@Redux/domains/pokerSessions/selectors';
@@ -21,6 +22,7 @@ import { TooltipDescription } from '@components/uiKit/TooltipDescription';
 import { useDidmount } from '@components/utils/hooks/useDidmount';
 import { Popper, POPPER_MODE } from '@components/utils/Popper';
 import { popperTooltipOptions } from '@components/utils/Popper/options/tooltip';
+import {TRANS} from "@components/utils/types";
 
 const Root = styled(Box)<TBoxProps>`
 position: relative;
@@ -46,6 +48,7 @@ const TeamScores = (props: TTeamScoresProps): React.ReactElement | null => {
     ...other
   } = props;
 
+  const { t } = useTranslation(TRANS.MAIN);
   const dispatch = useAppDispatch();
   const popperScoreIdRef = useRef(`team-score-${teamId}-${shortid()}`);
   const [tooltipTarget, setTooltipTarget] = useState<any>();
@@ -65,7 +68,7 @@ const TeamScores = (props: TTeamScoresProps): React.ReactElement | null => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
 
-    const numVal = Number.parseInt(value, 10);
+    const numVal = Number.parseFloat(value);
 
     if (Number.isNaN(numVal)) {
       setScoresVal(0);
@@ -79,7 +82,7 @@ const TeamScores = (props: TTeamScoresProps): React.ReactElement | null => {
       return null;
     }
 
-    const numVal = parseInt(val.toString(), 10);
+    const numVal = parseFloat(val.toString());
 
     if (Number.isNaN(numVal)) {
       return null;
@@ -135,7 +138,7 @@ const TeamScores = (props: TTeamScoresProps): React.ReactElement | null => {
       >
         <Tooltip>
           <TooltipDescription>
-            Click to edit team scores
+            {t('spacePokerSessionItem.scoreEdit')}
           </TooltipDescription>
         </Tooltip>
       </Popper>

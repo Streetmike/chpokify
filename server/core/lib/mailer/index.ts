@@ -10,7 +10,7 @@ const initMailer = async () => {
     // @ts-ignore
     host: process.env.SMTP_HOST as string,
     port: process.env.SMTP_PORT as string,
-    replyTo: 'info@chpokify.com',
+    replyTo: 'info@chpokify.ru',
     secure: process.env.SMTP_SECURE === 'true',
     ignoreTLS: process.env.SMTP_SECURE !== 'true',
     auth: {

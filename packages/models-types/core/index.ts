@@ -8,6 +8,6 @@ export enum ENVIRONMENT {
   LOCAL = 'local'
 }
 
-export const BASE_URL_PROD = 'https://chpokify.com';
+export const BASE_URL_PROD = 'https://chpokify.ru';
 
 export const PROJECT_NAME = 'Chpokify';

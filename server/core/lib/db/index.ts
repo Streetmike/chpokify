@@ -5,15 +5,12 @@ import { log } from '@core/lib/logger';
 
 mongoose.plugin(softDeletePlugin);
 
-const MONGODB_PASS = encodeURIComponent(process.env.MONGO_ROOT_PASSWORD as string);
-
 const connect = async () => {
   await mongoose.connect(
-    `mongodb://root:${MONGODB_PASS}@${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB_NAME}`,
+    `mongodb://${process.env.MONGO_HOST}:${process.env.MONGO_PORT}/${process.env.MONGO_DB_NAME}`,
     {
       autoIndex: true,
-      autoCreate: true,
-      authSource: 'admin',
+      autoCreate: true
     }
   );
 

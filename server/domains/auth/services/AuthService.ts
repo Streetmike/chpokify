@@ -15,7 +15,7 @@ import { routesHelpers } from '@routes/helpers';
 
 import { UserService } from '@users/services';
 
-const GOOGLE_CLIENT_ID = '238943843598-9iefbdc3npjlpsndj2aooch979djru26.apps.googleusercontent.com';
+const GOOGLE_CLIENT_ID = '1039766924795-n3j26k5dmvhkvu9j7c5fjdsm9igr7bm7.apps.googleusercontent.com';
 
 const googleOAuthClient = new OAuth2Client(GOOGLE_CLIENT_ID);
 

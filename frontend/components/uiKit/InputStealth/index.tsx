@@ -75,6 +75,8 @@ const InputStealth = React.forwardRef<any, TInputStealthProps>((props, ref) => {
 
   return (
     <StyledInput
+      type='number'
+      step="0.1"
       ref={reactHelpers.mergeRefs([inputRef, ref])}
       value={value}
       onChange={handleChange}

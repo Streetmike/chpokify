@@ -31,7 +31,7 @@ const config = {
     identitySecret: 'rJyXkNiMS7t_i7wAx0GxcWQo3pSya4J-UD8qMbHY',
   },
   jitsi: {
-    host: 'jitsi.chpokify.tech',
+    host: 'meet.jit.si',
   },
   tagManager: {
     trackingId: '',

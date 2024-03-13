@@ -1,6 +1,6 @@
 Thanks for trying out Chpokify. Please confirm your email to get started.
 
-Chpokify ( https://chpokify.com )
+Chpokify ( https://chpokify.ru )
 
 ******************
 Welcome, {{username}}!

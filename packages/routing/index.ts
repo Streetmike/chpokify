@@ -111,7 +111,7 @@ const getJoinUrl = () => '/join-team';
 
 const getIntegrationsUrl = () => '/integrations';
 
-const getBlogUrl = () => 'https://blog.chpokify.com/';
+const getBlogUrl = () => 'https://blog.chpokify.ru/';
 
 const getAgileEcosystemUrl = () => '/agile-ecosystem';
 
@@ -152,7 +152,7 @@ const getBlogUrls = () => [
 
 // community
 
-const getCommunityUrl = () => 'https://chpokify.com/community/';
+const getCommunityUrl = () => 'https://chpokify.ru/community/';
 
 const getCommunityAffinityEstimationUrl = () => '/affinity-estimation-vs-planning-poker/';
 

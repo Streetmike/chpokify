@@ -30,12 +30,12 @@ const IndexPartnership = () => (
       </Text>
 
       <a
-        href="mailto:info@chpokify.com"
+        href="mailto:info@chpokify.ru"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Button>
-          info@chpokify.com
+          info@chpokify.ru
         </Button>
       </a>
     </Flex>

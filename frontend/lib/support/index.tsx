@@ -1,4 +1,4 @@
-const emailSupport = 'mailto:info@chpokify.com';
+const emailSupport = 'mailto:info@chpokify.ru';
 
 const openEmailModal = () => window.open(emailSupport);
 

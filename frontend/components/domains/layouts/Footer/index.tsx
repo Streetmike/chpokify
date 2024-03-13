@@ -77,32 +77,6 @@ const Footer = () => {
             gridGap={2}
             mb={4}
           >
-            <SocialItem
-              as="a"
-              isExternal
-              href={ROUTING_EXTERNAL.DISCORD_CHANNEL}
-              aria-label="discord"
-            >
-              <IconSocialDiscord />
-            </SocialItem>
-
-            <SocialItem
-              as="a"
-              isExternal
-              href={ROUTING_EXTERNAL.YOUTUBE_URL}
-              aria-label="discord"
-            >
-              <IconYoutube />
-            </SocialItem>
-
-            <SocialItem
-              as="a"
-              isExternal
-              href={ROUTING_EXTERNAL.FACEBOOK_URL}
-              aria-label="discord"
-            >
-              <IconFacebook />
-            </SocialItem>
           </Grid>
 
           <Text

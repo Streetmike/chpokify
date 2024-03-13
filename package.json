@@ -1,7 +1,7 @@
 {
   "name": "chpokify",
   "description": "The project management tool designed for agile teams",
-  "homepage": "https://chpokify.com",
+  "homepage": "https://chpokify.ru",
   "version": "0.0.1",
   "repository": "https://gitlab.com/chpokify/main.git",
   "author": "borodulin <borodulin.dev@gmail.com>",
@@ -32,12 +32,12 @@
     "clear:modules": "rm -rf ./packages/*/node_modules && rm -rf ./node_modules && rm -rf ./server/node_modules && rm -rf ./frontend/node_modules && rm -rf figma/node_modules",
     "commit": "git-cz",
     "client:build": "yarn frontend run build",
-    "client:start": "source scripts/load_env.sh && yarn frontend run start",
-    "client:dev": "source scripts/load_env.sh && yarn frontend run dev",
+    "client:start": ". scripts/load_env.sh && yarn frontend run start",
+    "client:dev": ". scripts/load_env.sh && yarn frontend run dev",
     "server:demon": "yarn server run demon",
     "server:dev": "docker-compose up --build --remove-orphans",
     "server:build": "webpack --config webpack.config.js",
-    "server:start": "node ./server/build/index.js",
+    "server:start": ". scripts/load_env.sh && node ./server/build/index.js",
     "figma:import": "yarn figma run start",
     "storybook": "yarn frontend run storybook",
     "storybook:build": "yarn frontend run storybook:build"
@@ -78,5 +78,8 @@
     "webpack": "5.10.1",
     "webpack-cli": "4.3.1",
     "webpack-node-externals": "2.5.2"
+  },
+  "dependencies": {
+    "resolve-cwd": "^3.0.0"
   }
 }

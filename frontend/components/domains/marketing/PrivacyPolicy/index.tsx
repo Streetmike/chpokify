@@ -321,12 +321,12 @@ const PrivacyPolicy = () => (
 
       <address>
         <LinkComponent
-          href="mailto:info@chpokify.com"
+          href="mailto:info@chpokify.ru"
           target="_blank"
           rel="noopener noreferrer"
           mb={2}
         >
-          info@chpokify.com
+          info@chpokify.ru
         </LinkComponent>
       </address>
     </Section>

@@ -1,7 +1,7 @@
 const config = {
   apple: {
     clientId: 'com.chpokify.web',
-    redirectURI: 'https://chpokify.com',
+    redirectURI: 'https://chpokify.ru',
   },
   payments: {
   },

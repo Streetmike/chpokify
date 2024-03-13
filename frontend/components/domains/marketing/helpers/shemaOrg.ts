@@ -29,13 +29,13 @@ const getWebPageCreator = () => ({
   image: {
     '@type': 'ImageObject',
     height: '630',
-    url: 'https://chpokify.com/images/cover.png',
+    url: 'https://chpokify.ru/images/cover.png',
     width: '1200',
   },
   logo: {
     '@type': 'ImageObject',
     height: '60',
-    url: 'https://chpokify.com/pwa-assets/apple-touch-icon.png',
+    url: 'https://chpokify.ru/pwa-assets/apple-touch-icon.png',
     width: '60',
   },
   name: PROJECT_NAME,
@@ -45,18 +45,18 @@ const getWebPageCreator = () => ({
 });
 
 const getWebPageOrganization = () => ({
-  '@id': 'https://chpokify.com#organization',
+  '@id': 'https://chpokify.ru#organization',
   '@type': 'Organization',
   image: {
     '@type': 'ImageObject',
     height: '630',
-    url: 'https://chpokify.com/images/cover.png',
+    url: 'https://chpokify.ru/images/cover.png',
     width: '1200',
   },
   logo: {
     '@type': 'ImageObject',
     height: '60',
-    url: 'https://chpokify.com/pwa-assets/apple-touch-icon.png',
+    url: 'https://chpokify.ru/pwa-assets/apple-touch-icon.png',
     width: '60',
   },
   name: PROJECT_NAME,
@@ -86,14 +86,14 @@ const getWebPage = ({
     {
       '@type': 'WebPage',
       author: {
-        '@id': 'https://chpokify.com#organization',
+        '@id': 'https://chpokify.ru#organization',
       },
       copyrightHolder: {
-        '@id': 'https://chpokify.com#organization',
+        '@id': 'https://chpokify.ru#organization',
       },
       copyrightYear: new Date().getFullYear(),
       creator: {
-        '@id': 'https://chpokify.com#creator',
+        '@id': 'https://chpokify.ru#creator',
       },
       dateModified: dateHelpers.formatAppointmentDateTime(new Date()),
       datePublished: dateHelpers.formatAppointmentDateTime(new Date()),
@@ -101,7 +101,7 @@ const getWebPage = ({
       headline: name,
       image: {
         '@type': 'ImageObject',
-        url: 'https://chpokify.com/images/cover.png',
+        url: 'https://chpokify.ru/images/cover.png',
       },
       inLanguage: 'en-us',
       mainEntityOfPage: BASE_URL_PROD,

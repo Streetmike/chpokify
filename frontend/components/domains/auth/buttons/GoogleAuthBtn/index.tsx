@@ -21,7 +21,7 @@ import { TRANS } from '@components/utils/types';
 import { ClientError } from '@lib/errors';
 import { log } from '@lib/logger';
 
-const CLIENT_ID = '238943843598-9iefbdc3npjlpsndj2aooch979djru26.apps.googleusercontent.com';
+const CLIENT_ID = '1039766924795-n3j26k5dmvhkvu9j7c5fjdsm9igr7bm7.apps.googleusercontent.com';
 
 const GOOGLE_COOKIES_NOT_ENABLED_ERROR_CODE = 'idpiframe_initialization_failed';
 

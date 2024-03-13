@@ -5,7 +5,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
   appInfo: {
     name: 'Chpokify',
     version: '0.0.1',
-    url: 'https://chpokify.com',
+    url: 'https://chpokify.ru',
   },
 });
 

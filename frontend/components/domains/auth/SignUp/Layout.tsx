@@ -8,8 +8,6 @@ import { routing } from '@chpokify/routing';
 import { Trans, useTranslation } from 'next-i18next';
 import React, { FormEvent } from 'react';
 
-import { APPLE_AUTH_PLACEMENT, AppleAuthBtn } from '@components/domains/auth/buttons/AppleAuthBtn';
-import { GOOGLE_AUTH_PLACEMENT, GoogleAuthBtn } from '@components/domains/auth/buttons/GoogleAuthBtn';
 import { DataEncrypted } from '@components/domains/auth/DataEncrypted';
 import { InputPassword } from '@components/domains/auth/InputPassword';
 import { Terms } from '@components/domains/auth/Terms';
@@ -124,18 +122,6 @@ const Layout = (props: TSignUpLayoutProps): React.ReactElement | null => {
               }}
             />
           </Text>
-
-          <GoogleAuthBtn
-            fullWidth
-            placement={GOOGLE_AUTH_PLACEMENT.SIGNUP}
-            mb={4}
-          />
-
-          <AppleAuthBtn
-            fullWidth
-            placement={APPLE_AUTH_PLACEMENT.SIGNUP}
-            mb={4}
-          />
 
           <DividerWithText
             mb={4}

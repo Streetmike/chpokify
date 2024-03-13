@@ -83,6 +83,16 @@ const GlobalStyle = createGlobalStyle`
   .spaceOnboardingHidePrevBtn [data-tour-elem="left-arrow"] {
     display: none;
   }
+
+  input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  margin: 0;
+  }
+
+  /* Works for Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
 `;
 
 export {

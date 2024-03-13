@@ -625,7 +625,8 @@
     "ratingStat": "Рейтинг",
     "cardDeck": "Колода",
     "storiesStat": "Задачи",
-    "scoresStat": "Счет"
+    "scoresStat": "Счет",
+    "scoreEdit": "Кликните чтобы отредактировать командный счет"
   },
   "usernameSettings": {
     "title": "Имя пользователя",

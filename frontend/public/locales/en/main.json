@@ -618,7 +618,8 @@
     "ratingStat": "Rating",
     "cardDeck": "Card deck",
     "storiesStat": "Tasks",
-    "scoresStat": "Scores"
+    "scoresStat": "Scores",
+    "scoreEdit": "Click to edit team scores"
   },
   "usernameSettings": {
     "title": "Username",
